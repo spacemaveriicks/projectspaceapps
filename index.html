@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Inundaciones</title>
+    <style>
+        /* Estilos básicos para la página */
+        body {
+            font-family: Times New Romans, sans-serif; /* Tipo de letra */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Color de fondo */
+        }
+
+        /* Contenedor para el encabezado y las pestañas */
+        .header-tab-container {
+            display: flex;
+            align-items: center;
+            background-color: #001f3f; /* Color azul marino */
+        }
+
+        /* Estilos para la imagen de encabezado */
+        .header {
+            width: 100px;
+            height: auto;
+            margin-right: 20px; /* Espacio entre la imagen y las pestañas */
+        }
+
+        /* Estilos para la barra de navegación */
+        .tab {
+            flex-grow: 1; /* Para que las pestañas ocupen el espacio restante */
+        }
+
+        /* Estilos para cada pestaña */
+        .tab button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 16px 18px;
+            transition: 0.3s;
+            font-size: 17px;
+            color: white; /* Color del texto en las pestañas */
+        }
+
+        /* Estilos para pestañas al pasar el mouse */
+        .tab button:hover {
+            background-color: #0056b3; /* Color azul claro al pasar el mouse */
+        }
+
+        /* Estilos para la pestaña activa */
+        .tab button.active {
+            background-color: #004080; /* Color azul oscuro para la pestaña activa */
+        }
+
+        /* Estilos para el contenido de las pestañas */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+            border: 1px solid #ddd; /* Borde de las secciones de contenido */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Contenedor para el encabezado y las pestañas -->
+<div class="header-tab-container">
+    <!-- Imagen de encabezado -->
+    <img src="https://github.com/spacemaveriicks/projecthackathonnasa/blob/main/logosm.jpeg" alt="Encabezado" class="header">
+    
+    <!-- Barra de navegación con pestañas -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Intro')">Introducción</button>
+        <button class="tablinks" onclick="openTab(event, 'Mapa')">Mapa</button>
+        <button class="tablinks" onclick="openTab(event, 'Analisis')">Análisis de Datos</button>
+        <button class="tablinks" onclick="openTab(event, 'Solucion')">Solución</button>
+        <button class="tablinks" onclick="openTab(event, 'Referencias')">Referencias</button>
+    </div>
+</div>
+
+<!-- Contenido de la pestaña Introducción -->
+<div id="Intro" class="tabcontent">
+    <h3>Introducción</h3>
+    <p>Problemática&nbsp;</p>
+    <p>Problemática&nbsp;</p>
+</div>
+
+<!-- Contenido de la pestaña Mapa -->
+<div id="Mapa" class="tabcontent">
+    <h3>Mapa</h3>
+    <!-- Aquí se podría incluir el iframe o el script para mostrar el mapa de QGIS -->
+    <p>Mapa interactivo con capas vectoriales de información.</p>
+</div>
+
+<!-- Contenido de la pestaña Análisis de Datos -->
+<div id="Analisis" class="tabcontent">
+    <h3>Análisis de Datos</h3>
+    <p>Resultados del análisis de datos.</p>
+</div>
+
+<!-- Contenido de la pestaña Solución -->
+<div id="Solucion" class="tabcontent">
+    <h3>Solución</h3>
+    <p>Propuesta de solución para mitigar las inundaciones.</p>
+</div>
+
+<!-- Contenido de la pestaña Referencias -->
+<div id="Referencias" class="tabcontent">
+    <h3>Referencias</h3>
+    <p>Fuentes y referencias bibliográficas.</p>
+</div>
+
+<script>
+    // Función para abrir la pestaña seleccionada
+    function openTab(evt, tabName) {
+        // Declaración de variables
+        var i, tabcontent, tablinks;
+
+        // Obtener todos los elementos con la clase "tabcontent" y ocultarlos
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Obtener todos los elementos con la clase "tablinks" y eliminar la clase "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Mostrar el contenido de la pestaña actual y añadir la clase "active" al botón que abrió la pestaña
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</body>
+</html>
