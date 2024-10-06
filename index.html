@@ -114,8 +114,8 @@
     </style>
 </head>
    
-<body onload="mostrarContenido('Home')">
-    <button id="Home">Home</button>
+/* <body onload="mostrarContenido('Home')"> */
+   /* <button id="Home">Home</button> */
     
 <body>
 
@@ -240,18 +240,18 @@
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
-    function mostrarContenido(idBoton) {
-    // Ocultar todos los contenidos
-    const contenidos = document.querySelectorAll('.contenido');
-    contenidos.forEach(contenido => {
-        contenido.style.display = 'none';   
+  /*  function mostrarContenido(idBoton) { */
+   /*   // Ocultar todos los contenidos */
+  /*    const contenidos = document.querySelectorAll('.contenido'); */ 
+  /*    contenidos.forEach(contenido => { */
+   /*       contenido.style.display = 'none';  */  
 
-    });
+ /*     }); */
 
-    // Mostrar el contenido seleccionado
-    const contenidoSeleccionado = document.getElementById(idBoton + '-contenido');
-    contenidoSeleccionado.style.display = 'block';
-}
+ /*     // Mostrar el contenido seleccionado */
+ /*     const contenidoSeleccionado = document.getElementById(idBoton + '-contenido'); */
+  /*    contenidoSeleccionado.style.display = 'block'; */
+  /* } */
 </script>
 
 </body>
