@@ -13,23 +13,12 @@
             background-color: #f4f4f4; /* Color de fondo */
         }
 
-        /* Imagen de fondo para la página de inicio */
-        .background {
-            background-image: url('<img src="https://i.ibb.co/Xxs1mLK/primercollage.jpg" alt="primercollage" border="0">');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-        }
-
         /* Contenedor para el encabezado y las pestañas */
         .header-tab-container {
             display: flex;
             align-items: center;
             background-color: #001f3f; /* Color azul marino */
             width: 100%;
-            position: sticky;
-            top: 0;
-            z-index: 1;
         }
 
         /* Estilos para la imagen de encabezado */
@@ -75,6 +64,12 @@
             background-color: #ffffff; /* Color de fondo de las pestañas */
         }
 
+        /* Estilo para la pestaña de inicio que muestra la imagen a lo largo de toda la página */
+        .inicio img {
+            width: 100%;
+            height: auto;
+        }
+
         /* Estilos para centrar imágenes */
         .center-images {
             display: flex;
@@ -91,22 +86,25 @@
 </head>
 <body>
 
-<!-- Imagen de fondo solo para la página de inicio -->
-<div class="background">
-    <!-- Contenedor para el encabezado y las pestañas -->
-    <div class="header-tab-container">
-        <!-- Imagen de encabezado -->
-        <img src="https://i.ibb.co/8B8JsCd/logospacemaveriicks.jpg" alt="Encabezado" class="header"border="0">
-        
-        <!-- Barra de navegación con pestañas -->
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Intro')">Introducción</button>
-            <button class="tablinks" onclick="openTab(event, 'Mapa')">Mapa</button>
-            <button class="tablinks" onclick="openTab(event, 'Analisis')">Análisis de Datos</button>
-            <button class="tablinks" onclick="openTab(event, 'Solucion')">Solución</button>
-            <button class="tablinks" onclick="openTab(event, 'Referencias')">Referencias</button>
-        </div>
+<!-- Contenedor para el encabezado y las pestañas -->
+<div class="header-tab-container">
+    <!-- Imagen de encabezado -->
+    <img src="https://i.ibb.co/8B8JsCd/logospacemaveriicks.jpg" alt="Encabezado" class="header"border="0">
+    
+    <!-- Barra de navegación con pestañas -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Inicio')">Inicio</button>
+        <button class="tablinks" onclick="openTab(event, 'Intro')">Introducción</button>
+        <button class="tablinks" onclick="openTab(event, 'Mapa')">Mapa</button>
+        <button class="tablinks" onclick="openTab(event, 'Analisis')">Análisis de Datos</button>
+        <button class="tablinks" onclick="openTab(event, 'Solucion')">Solución</button>
+        <button class="tablinks" onclick="openTab(event, 'Referencias')">Referencias</button>
     </div>
+</div>
+
+<!-- Contenido de la pestaña Inicio -->
+<div id="Inicio" class="tabcontent inicio">
+   <img src="https://i.ibb.co/Xxs1mLK/primercollage.jpg" alt="primercollage" border="0">
 </div>
 
 <!-- Contenido de la pestaña Introducción -->
@@ -131,7 +129,7 @@
         <img src="https://i.ibb.co/7yWYx1x/drenaje.png" alt="drenaje" border="0">
         <img src="https://i.ibb.co/4K96NZF/municipioveracruz.png" alt="municipioveracruz" border="0">
         <img src="https://i.ibb.co/xXdQpT7/precipitacion.png" alt="precipitacion" border="0">
-        <img src="ruta/a/tu/imagen5.jpg" alt="Imagen 5">
+        <img src="ruta/a/tu/imagen5.jpg" alt="Imagen 5">        
         
     </div>
 </div>
