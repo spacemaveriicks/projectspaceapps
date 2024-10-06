@@ -239,6 +239,10 @@
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
+     // Abrir la pestaña "Home" por defecto
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector(".tablinks").click();
+    });
  
 </script>
 
