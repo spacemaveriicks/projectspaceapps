@@ -21,7 +21,6 @@
             width: 100%;
         }
 
-       
         /* Estilos para la imagen de encabezado */
         .header {
             width: 100px;
@@ -71,40 +70,18 @@
             height: auto;
         }
 
-      /* Contenedor para centrar las imágenes y sus títulos */
+        /* Estilos para centrar imágenes */
         .center-images {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px; /* Espacio entre imágenes */
-            padding: 20px;
+            gap: 10px; /* Espacio entre imágenes */
         }
 
-        /* Estilos para cada imagen y su título */
-        .image-container {
-            text-align: center; /* Centrar el texto */
-            margin-bottom: 20px; /* Espacio debajo para añadir texto */
-        }
-
-        /* Estilo para las imágenes */
-        .image-container img {
+        .center-images img {
             max-width: 800px; /* Tamaño máximo de las imágenes */
             height: auto;
         }
-
-        /* Estilo para los títulos de las imágenes */
-        .image-container figcaption {
-            margin-top: 10px; /* Espacio encima del título */
-            font-size: 14px; /* Tamaño de fuente del título */
-            font-weight: bold; /* Texto en negrita */
-        }
-
-        /* Estilo para el texto debajo de las imágenes */
-        .image-text {
-            margin-top: 10px; /* Espacio encima del texto */
-            font-size: 12px; /* Tamaño de fuente del texto */
-        }
-    
     </style>
 </head>
 <body>
@@ -116,12 +93,12 @@
     
     <!-- Barra de navegación con pestañas -->
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Home')">Inicio</button>
-        <button class="tablinks" onclick="openTab(event, 'Introduction')">Introducción</button>
-        <button class="tablinks" onclick="openTab(event, 'Map')">Mapa</button>
-        <button class="tablinks" onclick="openTab(event, 'Analisis Data')">Análisis de Datos</button>
-        <button class="tablinks" onclick="openTab(event, 'Solution')">Solución</button>
-        <button class="tablinks" onclick="openTab(event, 'References')">Referencias</button>
+        <button class="tablinks" onclick="openTab(event, 'Inicio')">Inicio</button>
+        <button class="tablinks" onclick="openTab(event, 'Intro')">Introducción</button>
+        <button class="tablinks" onclick="openTab(event, 'Mapa')">Mapa</button>
+        <button class="tablinks" onclick="openTab(event, 'Analisis')">Análisis de Datos</button>
+        <button class="tablinks" onclick="openTab(event, 'Solucion')">Solución</button>
+        <button class="tablinks" onclick="openTab(event, 'Referencias')">Referencias</button>
     </div>
 </div>
 
@@ -139,7 +116,7 @@
     <p>From historic forts to lively markets, this city offers a unique glimpse into the heart of Mexican coastal life. &nbsp</p>
     <ul>
     <li><p>Flooding in the municipality of Veracruz, Mexico, is a common problem during rainy seasons, caused by the surrounding physical geography of the area, the poor management of the drainage system and the education of the population.&nbsp;</p></li>
-    <li><p>Earthdata Search is NASA's data search and access system that enables discovery, filtering, visualization, and access to Earth science data; access to multiple Earth Observing System Data and Information System (EOSDIS) satellite data collections; and highlight planned EOSDIS services as they become available. Earthdata Search offers free access to thousands of EOSDIS data products. These products cover all disciplines and subject areas of Earth science.&nbsp;</p></li>
+    <p>Descripción del proyecto y objetivo principal.&nbsp;</p>
     <p>Descripción del proyecto y objetivo principal.&nbsp;</p>
     <p>Descripción del proyecto y objetivo principal.&nbsp;</p>
         </ul>
@@ -154,46 +131,25 @@
 
 <!-- Contenido de la pestaña Análisis de Datos -->
 <div id="Analisis" class="tabcontent">
-    <h3>Data Analisis</h3>
+    <h3>Análisis de Datos</h3>
     <div class="center-images">
-    <p>The study area, encompassing the Veracruz metropolitan region and its environs, is delineated in Figure 1.</p> 
-    <!-- Contenedor para la primera imagen y su título -->
-    <figure class="image-container">
-        <img src="https://i.ibb.co/4K96NZF/municipioveracruz.png" alt="Imagen 1">
+        <!-- Añadir cinco imágenes aquí -->
+        <img src="https://i.ibb.co/4K96NZF/municipioveracruz.png" alt="municipioveracruz" title="Veracruz city and nearby places." border="0">
         <figcaption>Veracruz city and nearby places.</figcaption>
-        <div class="image-text">Figure 2 shows the distribution of rainfall in Veracruz city and nearby places. </div>
-    </figure>
-
-    <!-- Contenedor para la segunda imagen y su título -->
-    <figure class="image-container">
-        <img src="https://i.ibb.co/xXdQpT7/precipitacion.png" alt="Imagen 2">
-        <figcaption>Rainfall.</figcaption>
-        <div class="image-text">Figure 3 presents a graphical representation of the water bodies in Veracruz city and its surroundings.</div>
-    </figure>
-
-    <!-- Contenedor para la tercera imagen y su título -->
-    <figure class="image-container">
-        <img src="https://i.ibb.co/ZSD8XSL/cuerposdeagua.png" alt="Imagen 3">
-        <figcaption>Water bodies.</figcaption>
-        <div class="image-text">Espacio para texto debajo de la imagen.</div>
-    </figure>
-
-    <!-- Contenedor para la cuarta imagen y su título -->
-    <figure class="image-container">
-        <img src="https://i.ibb.co/7yWYx1x/drenaje.png" alt="Imagen 4" width="650" height="auto">
-        <figcaption>Drainage Map.</figcaption>
-        <div class="image-text">Espacio para texto debajo de la imagen.</div>
-    </figure>
-
-    <!-- Contenedor para la quinta imagen y su título -->
-    <figure class="image-container">
-        <img src="ruta/a/tu/imagen5.jpg" alt="Imagen 5">
-        <figcaption>Título Imagen 5</figcaption>
-        <div class="image-text">Espacio para texto debajo de la imagen.</div>
-    </figure>
-</div>
-       
+        <p>Texto entre imagen &nbsp;</p>
+        <img src="https://i.ibb.co/xXdQpT7/precipitacion.png" alt="precipitacion" title="Rainfall" border="0">
+        <figcaption>Rainfall</figcaption>
+        <p>Texto entre imagen &nbsp;</p>
+        <img src="https://i.ibb.co/ZSD8XSL/cuerposdeagua.png" alt="cuerposdeagua" title="Water bodies." border="0">
+        <figcaption>Water bodies</figcaption>
+        <p>Texto entre imagen &nbsp;</p>
+        <img src="https://i.ibb.co/7yWYx1x/drenaje.png" alt="drenaje" title="Drainage Map" border="0">
+        <figcaption>Drainage Map</figcaption>
+        <p>Texto entre imagen &nbsp;</p>
+        <img src="ruta/a/tu/imagen5.jpg" alt="Imagen 5">        
+        <p>Texto entre imagen &nbsp;</p>
         
+    </div>
 </div>
 
 <!-- Contenido de la pestaña Solución -->
