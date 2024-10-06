@@ -136,9 +136,16 @@
             text-align: left;
         }
 
+       body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
         iframe {
-            width: 1024px;
-            height: auto; /* 100% de la altura de la ventana */
+            width: 100%;
+            height: 100%;
+            border: none; /* Elimina el borde del iframe */
         }
 
         
@@ -190,8 +197,8 @@
 
 <!-- Contenido de la pestaña Map -->
 <div id="Map" class="tabcontent">
-    <iframe src="https://qgiscloud.com/mariajuanz17/Mapa_veracruz_municipio/" style="width: 100%; height: 800px;"></iframe>
-  
+    <iframe src="https://qgiscloud.com/mariajuanz17/Mapa_veracruz_municipio/" ></iframe>
+     
     
 </div>
 
