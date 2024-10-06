@@ -70,17 +70,38 @@
             height: auto;
         }
 
-        /* Estilos para centrar imágenes */
+        /* Contenedor para centrar las imágenes y sus títulos */
         .center-images {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 10px; /* Espacio entre imágenes */
+            gap: 20px; /* Espacio entre imágenes */
+            padding: 20px;
         }
 
-        .center-images img {
+        /* Estilos para cada imagen y su título */
+        .image-container {
+            text-align: center; /* Centrar el texto */
+            margin-bottom: 20px; /* Espacio debajo para añadir texto */
+        }
+
+        /* Estilo para las imágenes */
+        .image-container img {
             max-width: 800px; /* Tamaño máximo de las imágenes */
             height: auto;
+        }
+
+        /* Estilo para los títulos de las imágenes */
+        .image-container figcaption {
+            margin-top: 10px; /* Espacio encima del título */
+            font-size: 14px; /* Tamaño de fuente del título */
+            font-weight: bold; /* Texto en negrita */
+        }
+
+        /* Estilo para el texto debajo de las imágenes */
+        .image-text {
+            margin-top: 10px; /* Espacio encima del texto */
+            font-size: 17px; /* Tamaño de fuente del texto */
         }
     </style>
 </head>
@@ -133,22 +154,42 @@
 <div id="Analisis" class="tabcontent">
     <h3>Análisis de Datos</h3>
     <div class="center-images">
-        <!-- Añadir cinco imágenes aquí -->
-        <img src="https://i.ibb.co/4K96NZF/municipioveracruz.png" alt="municipioveracruz" title="Veracruz city and nearby places." border="0">
-        <figcaption>Veracruz city and nearby places.</figcaption>
-        <p>Texto entre imagen &nbsp;</p>
-        <img src="https://i.ibb.co/xXdQpT7/precipitacion.png" alt="precipitacion" title="Rainfall" border="0">
-        <figcaption>Rainfall</figcaption>
-        <p>Texto entre imagen &nbsp;</p>
-        <img src="https://i.ibb.co/ZSD8XSL/cuerposdeagua.png" alt="cuerposdeagua" title="Water bodies." border="0">
-        <figcaption>Water bodies</figcaption>
-        <p>Texto entre imagen &nbsp;</p>
-        <img src="https://i.ibb.co/7yWYx1x/drenaje.png" alt="drenaje" title="Drainage Map" border="0">
-        <figcaption>Drainage Map</figcaption>
-        <p>Texto entre imagen &nbsp;</p>
-        <img src="ruta/a/tu/imagen5.jpg" alt="Imagen 5">        
-        <p>Texto entre imagen &nbsp;</p>
         
+    <!-- Contenedor para la primera imagen y su título -->
+    <figure class="image-container">
+        <img src="https://i.ibb.co/4K96NZF/municipioveracruz.png" alt="Imagen 1">
+        <figcaption>Veracruz city and nearby places.</figcaption>
+        <div class="image-text">Espacio para texto debajo de la imagen.</div>
+    </figure>
+
+    <!-- Contenedor para la segunda imagen y su título -->
+    <figure class="image-container">
+        <img src="https://i.ibb.co/xXdQpT7/precipitacion.png" alt="Imagen 2">
+        <figcaption>Rainfall.</figcaption>
+        <div class="image-text">Espacio para texto debajo de la imagen.</div>
+    </figure>
+
+    <!-- Contenedor para la tercera imagen y su título -->
+    <figure class="image-container">
+        <img src="https://i.ibb.co/ZSD8XSL/cuerposdeagua.png" alt="Imagen 3">
+        <figcaption>Water bodies.</figcaption>
+        <div class="image-text">Espacio para texto debajo de la imagen.</div>
+    </figure>
+
+    <!-- Contenedor para la cuarta imagen y su título -->
+    <figure class="image-container">
+        <img src="https://i.ibb.co/7yWYx1x/drenaje.png" alt="Imagen 4">
+        <figcaption>Drainage Map.</figcaption>
+        <div class="image-text">Espacio para texto debajo de la imagen.</div>
+    </figure>
+
+    <!-- Contenedor para la quinta imagen y su título -->
+    <figure class="image-container">
+        <img src="ruta/a/tu/imagen5.jpg" alt="Imagen 5">
+        <figcaption>Título Imagen 5</figcaption>
+        <div class="image-text">Espacio para texto debajo de la imagen.</div>
+    </figure>
+           
     </div>
 </div>
 
